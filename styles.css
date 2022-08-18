@@ -1,0 +1,142 @@
+body {
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.outline {
+  fill: orange;
+  opacity: 1;
+}
+
+#logo-svg {
+  width: 20vw;
+}
+
+
+/* Letter n */
+#letter-n-path {
+  stroke-width: 27.4px;
+  stroke-dasharray: 1200; /* How many pieces the letter of made of */
+  animation: draw-letter-n 2s forwards reverse;
+}
+
+@keyframes draw-letter-n {
+  to {
+    stroke-dashoffset: 1200;
+  }
+}
+
+/* Letter i */
+@keyframes wave {
+  0%    { x: -400px }
+  100%  { x: 0 }
+}
+    
+@keyframes fill-up {
+  0% {
+    opacity: 1;
+    y: 130px;
+  }
+  100% {
+    opacity: 1;
+  }
+} 
+
+.water-fill {
+  animation: wave 0.7s infinite linear, fill-up 3s forwards ease-out reverse;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+/* Letter i-dot */
+#letter-i-dot {
+  animation: dropDot 3s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+@keyframes dropDot {
+  0% {
+    opacity: 0;
+    transform: matrix(2.231891, 0, 0, 2.231891, 59.577244, -100);
+  }
+  79% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+    transform: matrix(2.231891, 0, 0, 2.231891, 59.577244, -100);
+  }
+  85% {
+    transform: matrix(2.231891, 0, 0, 2.231891, 59.577244, 74.464523);
+  }
+  90% {
+    transform: matrix(2.231891, 0, 0, 2.231891, 59.577244, 60);
+  }
+  95% {
+    transform: matrix(2.231891, 0, 0, 2.231891, 59.577244, 74.464523);
+  }
+  97% {
+    transform: matrix(2.231891, 0, 0, 2.231891, 59.577244, 70);
+  }
+  100%  {
+    transform: matrix(2.231891, 0, 0, 2.231891, 59.577244, 74.464523);
+    opacity: 1;
+  }
+}
+
+
+/* Letter c*/
+#letter-c-path {
+  stroke-width: 30px;
+  stroke-dasharray: 1200;
+  animation: draw-letter-c 4s forwards;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+@keyframes draw-letter-c {
+  0% {
+    stroke-dashoffset: 1200;
+  }
+  40% {
+    stroke-dashoffset: 1200;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Letter k */
+#letter-k-path {
+  stroke-width: 20px;
+  stroke-dasharray: 1200;
+  animation: draw-letter-k 4.5s forwards;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+@keyframes animate-letter-k {
+  0% {
+    opacity: 0;
+    transform: matrix(2.231891, 1.2, -1, 2.231891, 135, 74.464523);
+  }
+  100% {
+    opacity: 1;
+    transform: matrix(2.231891, 0, 0, 2.231891, 59.577244, 74.464523);
+  }
+}
+
+@keyframes draw-letter-k {
+  0% {
+    stroke-dashoffset: 1200;
+  }
+
+  40% {
+    stroke-dashoffset: 1200;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
