@@ -3,7 +3,7 @@ An animated logo of my name made using an SVG HTML element and CSS.
 
 Inspired by a [guide](https://www.cassie.codes/posts/creating-my-logo-animation/) by Cassie Codes.
 
-## Animating the handwriting
+## Animating handwriting
 
 To animate the logo look to look like it is being handwritten, use of the `<clipPath>` element.
 
@@ -15,7 +15,7 @@ Then, an animation is used to paint within this `<clipPath>` (AKA 'stensil') by 
 
 Essentially, we define a `<clipPath>` that is the shape of a letter, which acts like a stensil. Within this stensil, we draw the path of the letter that we want to animate as handwriting.
 
-### Define the <clipPath>
+### Define the clipPath
 First define the 'stensil' using a `<clipPath>`.
 
 The path of the letter 'N' is defined in the `<path>` tag below. We wrap the `<path>` tag in a `<clipPath>` element and give the `<clipPath>` element an ID, `letter-n`. This creates a stensil in the shape of the `<path>` element.
@@ -28,7 +28,7 @@ The path of the letter 'N' is defined in the `<path>` tag below. We wrap the `<p
 ```
 We have now created our stensil in the shape of the letter 'N', as defined by the `<path>` element. Now we need to draw in it.
 
-### Draw within the <clipPath>
+### Draw within the clipPath
 Add the path that will be drawn within the letter 'N'. To draw within the `<clipPath id="letter-n">`, assign the `<path>` element the attribute `clip-path="url(#letter-n)"`. Also assign it the ID `letter-n-path` to select the element in CSS.
 ```
 <svg id="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
