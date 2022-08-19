@@ -3,7 +3,7 @@ An animated logo of my name made using an SVG HTML element and CSS.
 
 Inspired by a [guide](https://www.cassie.codes/posts/creating-my-logo-animation/) by Cassie Codes.
 
-## How I gave the logo a handwriting animation
+### Animating the handwriting
 
 To make the logo look like it is being handwritten, we make use of the `<clipPath>` HTML element.
 
