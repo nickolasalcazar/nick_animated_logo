@@ -1,22 +1,18 @@
 body {
-  background-color: #fff;
-  min-height: 100vh;
-}
-
-.outline {
-  fill: orange;
-  opacity: 1;
+  background-color: aquamarine;
+  overflow: hidden;
 }
 
 #logo-svg {
-  width: 20vw;
+  width: 80vw;
+  margin: auto 10vw;
 }
 
 
 /* Letter n */
 #letter-n-path {
   stroke-width: 27.4px;
-  stroke-dasharray: 1200; /* How many pieces the letter of made of */
+  stroke-dasharray: 1200; /* How many pieces the letter is made of */
   animation: draw-letter-n 2s forwards reverse;
 }
 

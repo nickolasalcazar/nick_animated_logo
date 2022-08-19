@@ -1,6 +1,8 @@
 # Animated SVG Logo
 An animated logo of my name made using an SVG HTML element and CSS.
 
+[See the animation here.](https://nickolasalcazar.github.io/nick_animated_logo/)
+
 Inspired by a [guide](https://www.cassie.codes/posts/creating-my-logo-animation/) by Cassie Codes.
 
 ## Animating handwriting
@@ -43,7 +45,7 @@ Then add the following CSS to animate the path:
 ```
 #letter-n-path {
   stroke-width: 27.4px;       /* Thickness of the line that draws 'N'  */
-  stroke-dasharray: 1200;     /* How many pieces the letter of made of */
+  stroke-dasharray: 1200;     /* How many pieces the letter is made of */
   animation: draw-letter-n 2s forwards reverse;
 }
 
