@@ -1,1 +1,0 @@
-An animated .svg logo.
