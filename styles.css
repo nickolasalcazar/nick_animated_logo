@@ -5,6 +5,7 @@ body {
 
 #logo-svg {
   width: 80vw;
+  max-height: 90vh;
   margin: auto 10vw;
 }
 
