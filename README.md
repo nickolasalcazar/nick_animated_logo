@@ -7,7 +7,7 @@ Inspired by a [guide](https://www.cassie.codes/posts/creating-my-logo-animation/
 
 ## Animating handwriting
 
-To animate the logo look to look like it is being handwritten, use of the `<clipPath>` element.
+To animate the logo to look like it is being handwritten, use of the `<clipPath>` element.
 
 According to [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath), `<clipPath>` "restricts the region to which paint can be applied. Conceptually, parts of the drawing that lie outside of the region bounded by the clipping path are not drawn."
 
